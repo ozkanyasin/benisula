@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BitkileriniSula</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="once_a_day">Günde 1 Defa </string>
+
+
+    <string-array name="plants_routine">
+        <item>Sulama Periyodu</item>
+        <item>1 Günde Bir</item>
+        <item>2 Günde Bir</item>
+        <item>3 Günde Bir</item>
+        <item>4 Günde Bir</item>
+        <item>5 Günde Bir</item>
+        <item>6 Günde Bir</item>
+        <item>Haftada Bir</item>
+
+    </string-array>
+
+</resources>

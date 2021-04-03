@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "365669667875",
+    "project_id": "beni-sula",
+    "storage_bucket": "beni-sula.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365669667875:android:c8371eee2560d5bf170d96",
+        "android_client_info": {
+          "package_name": "com.example.bitkilerinisula"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365669667875-3g16mdmngv8u23251cvdr88ap0vulb5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTklTXmeqC-eveDbVc98rFQsnt3eLCghA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365669667875-3g16mdmngv8u23251cvdr88ap0vulb5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

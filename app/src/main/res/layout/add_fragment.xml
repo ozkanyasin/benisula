@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="77dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="250dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/greentea24x24"
+                android:drawableLeft="@drawable/green_tea"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Bitki Adı"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/colorDeneme"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonAddPhoto" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                style="?android:datePickerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorDeneme"
+                android:backgroundTint="@color/colorDeneme"
+                android:drawableStart="@drawable/calendar_icon"
+                android:drawableLeft="@drawable/calendar_icon"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:hint="Başlangıç Tarihi"
+                android:onClick="openDatePicker"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+            <EditText
+                android:id="@+id/editTextTime"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorDeneme"
+                android:backgroundTint="@color/colorDeneme"
+                android:drawableStart="@drawable/timer_icon"
+                android:drawableLeft="@drawable/timer_icon"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:hint="Başlangıç Saati"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:backgroundTint="@color/colorDeneme"
+                android:text="Ekle"
+                app:background="@color/colorDeneme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.684"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Spinner
+
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="16dp"
+                android:background="#CD468548"
+                android:entries="@array/plants_routine"
+                android:gravity="center_horizontal"
+                android:popupBackground="@color/spinnerBackGround"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTime"
+                app:layout_constraintStart_toStartOf="@+id/editTextTime"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTime" />
+
+            <ImageButton
+                android:id="@+id/imageButtonAddPhoto"
+                android:layout_width="155dp"
+                android:layout_height="149dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginBottom="30dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/border"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_photo"
+                app:layout_constraintBottom_toTopOf="@+id/editTextName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageButton
+                android:id="@+id/imageButtonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/space_transparent"
+                android:src="@drawable/back_arrow_icon"
+                android:tint="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/back_arrow_icon" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

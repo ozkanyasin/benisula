@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorAccent">#555152</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorSarimsi">#FFC107</color>
+    <color name="colorDeneme">#BF1D571F</color>
+    <color name="colorDeneme2">#9A916822</color>
+    <color name="space_transparent">#00000000</color>
+    <color name="white_with_alpha">#E1FFFFFF</color>
+    <color name="selected_item_color">#008A8A8A</color>
+    <color name="iconColor">#FFFFFF</color>
+    <color name="spinnerBackGround">#CD468548</color>
+</resources>
